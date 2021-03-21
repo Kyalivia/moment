@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*
+  background-image: url("https://source.unsplash.com/random/1920x1080");
+  background-size: cover;
+  */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.screen {
+  background-color: rgba(236, 240, 241, 0.7);
+  width: 80%;
+  height: 90%;
+  border-radius: 30px;
+}
+.btn {
+  cursor: pointer;
+}
+.js-clock {
+  font-size: 30px;
+  font-weight: 400;
+}
+.clicked {
+  color: #7f8c8d;
+}
+.form,
+.greetings {
+  display: none;
+}
+.greetings {
+  font-size: 40px;
+}
+input[type="text"] {
+  border: none;
+  font-size: 20px;
+}
+.showing {
+  display: block;
+}
+.list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+.js-weather {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 100px;
+}
